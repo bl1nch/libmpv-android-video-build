@@ -38,6 +38,6 @@ cat >"$prefix_dir"/lib/pkgconfig/shaderc_combined.pc <<"END"
 Name: shaderc_combined
 Description:
 Version: 2022.3-unknown
-Libs: -L/usr/lib -lshaderc_combined
-Cflags: -I/usr/include
+Libs: -L/usr/lib -lshaderc_combined -llibc++
+Cflags: -I${includedir}
 END
