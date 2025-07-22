@@ -52,11 +52,11 @@ done
 
 # Create JAR files for each architecture
 for arch in "${architectures[@]}"; do
-    jar_name="default-${arch}.jar"
+    jar_name="full-${arch}.jar"
     (cd temp && zip -r "../${jar_name}" "lib/${arch}")
 done
 
 # Clean up temporary directory
 rm -rf temp
 
-md5sum *.jar > default.md5
+md5sum *.jar > full.md5
