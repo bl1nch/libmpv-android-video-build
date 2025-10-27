@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 ## Dependency versions
+## .
 
 v_sdk=9123335_latest
 v_ndk=25.2.9519653
